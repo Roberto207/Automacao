@@ -1,12 +1,7 @@
-#https://dlp.hashtagtreinamentos.com/p...
-#pyautogui book documentation 
-#pyautogui.click - clicar com mouse  pyautogui.write  pyautogui.press  pyautogui.hotkey(combinacoes de tecla )
-#pyautogui.scroll pyautogui.position()
-
 import pyautogui as pg
 import time
 import pandas as pd
-#abrindo navegador
+#abrindo navegador / opening navegator
 
 pg.press('win')
 time.sleep(1)
@@ -19,7 +14,7 @@ pg.press('enter')
 time.sleep(2)
 
 #login
-#print(pyautogui.position())
+#print(pyautogui.position()) /  finding the location to move the mouse 
 pg.moveTo(485,425)
 time.sleep(1)
 pg.click()
@@ -29,7 +24,7 @@ pg.press('tab')
 pg.write('lababage')
 pg.press('enter')
 
-#cadastro
+#cadastro / sign up 
 time.sleep(2)
 tabela = pd.read_csv('automacao/produtos.csv')
 
